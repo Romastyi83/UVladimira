@@ -1,0 +1,80 @@
+.header
+  position relative
+  z-index 99
+  +el(inner)
+    width 100%
+    display flex
+    align-items center
+    justify-content space-between
+    padding 20px 0
+    +mq(0, 767px)
+      flex-direction column
+  +el(social)
+    display flex
+    align-items center
+    gap 50px
+  +el(tel-holder)
+    display flex
+    gap 10px
+    align-items flex-end
+  +el(tel)
+    font-size 25px
+  +el(tel-sup)
+    font-size 18px
+    +mq(0, 767px)
+      display none
+.fa
+  font-size 30px
+  font-weight 400
+  font-family "Font Awesome 5 Brands"
+.swiper
+  width 100%
+  padding 20px 39px
+.swiper-button-next
+.swiper-button-prev
+  color #fff
+.swiper-slide
+  img
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    max-width 100%
+    object-fit cover
+  +el(inner)
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    padding-top 56%
+    overflow hidden
+.br
+  position absolute
+  top 24px
+  left 84px
+  +el(1)
+    +mq(0, 1300px)
+      display none
+  +el(2)
+    top 200px
+    right 0
+    left auto
+  +el(3)
+    top calc(50% + 24px)
+    right 50px
+    left auto
+    +mq(0, 1000px)
+      display none
+.video
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  -o-object-fit cover
+  object-fit cover
+  +el(holder)
+    position relative
+    width 400px
+    max-width 100%
+    padding-top 56%
